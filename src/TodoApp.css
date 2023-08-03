@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+* {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  background-color: #40445e;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display:flex;
+  align-items:flex-start;
+  justify-content: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+h1 {
+  font-family: 'Bangers', Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 36px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.defining-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d9d3d3;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.highlight {
+  box-shadow: 0 0 5px #ff6600;
+  border: 2px solid #ff6600;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.defining-container input[type="text"],
+.defining-container input[type="date"],
+.defining-container select {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #848080;
+  transition: border-color 0.3s ease;
+}
+
+.defining-container button {
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.defining-container button:active {
+  transform: scale(0.95);
+}
+
+.defining-container button:last-child {
+  background-color: #dc3545;
+}
+
+.defining-container button:hover {
+  background-color: #0056b3;
+}
+
+.todo-list {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.todo-item.Work {
+  background-color: #e3a3a3;
+}
+
+.todo-item.Personal {
+  background-color: #a5caf7;
+}
+
+.todo-item.Shopping {
+  background-color: #8ddda5;
+}
+
+.todo-item.completed {
+  background-color: #f2f2f2;
+  border: 1px solid #e1e1e1;
+  box-shadow: none;
+  opacity: 0.8;
+  transition: background-color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+}
+
+.todo-item.completed .todo-text {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.todo-item.completed .edit-button,
+.todo-item.completed button {
+  background-color: #e1e1e1;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.delete-icon,
+.edit-icon,
+.task-icon {
+  width: 15px;
+  height: 15px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo-item button.edit-button {
+  background-color: #6761b1;
+  margin-right: 10px;
+}
+
+.todo-item button:hover {
+  background-color: #e80e24;
+}
+
+.clear-all-button {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.clear-all-button:hover {
+  background-color: #bd2130;
+}
+
+.information-card {
+  background-color: #e4e1e1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.category-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-info-item {
+  display: flex;
+  align-items: center;
+}
+
+.category-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.work {
+  background-color: #e3a3a3;
+}
+
+.personal {
+  background-color: #a5caf7;
+}
+
+.shopping {
+  background-color: #8ddda5;
+}
+
+.center-content {
+  text-align: center;
+  margin-top: 20px;
+}
